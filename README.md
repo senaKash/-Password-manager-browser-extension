@@ -7,9 +7,14 @@
 
 Нажимая на запись с аккаунтом логин и пароль копируются в буффер обменя
 
-![image](https://github.com/user-attachments/assets/28340eec-6afc-4ab9-914c-ad10cc9225fd)
+**Установка**
 
-![image](https://github.com/user-attachments/assets/ff74b55e-44d0-4fd6-9d2f-1e7a0de90397)
+Браузер->Управление расширениями->режим разработчика->загрузить распакованное расширение
+После чего выбираете папку с расширением
+
+
+![image](https://github.com/user-attachments/assets/28340eec-6afc-4ab9-914c-ad10cc9225fd)
 
 ![image](https://github.com/user-attachments/assets/08667086-e6af-4bb5-9726-070d002f05a4)
 
+![image](https://github.com/user-attachments/assets/ba4c2480-9fec-4a7f-9a70-016cb7e1a1d0)
