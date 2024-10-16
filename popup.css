@@ -1,0 +1,271 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Цвет фона страницы */
+  color: #7c4feb; /* Цвет текста */
+}
+
+.container {
+  width: 350px;
+  height: 500px; /* Фиксированный размер для избежания прокрутки */
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+#settings-button {
+  background-color: #7c4feb; /* Цвет фона кнопки настроек */
+  color: #fff; /* Цвет текста кнопки настроек */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#settings-button:hover {
+  background-color: #7c4feb; /* Цвет фона кнопки настроек при наведении */
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222; /* Цвет фона выпадающего списка */
+  color: #7c4feb; /* Цвет текста выпадающего списка */
+}
+
+.entries {
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111; /* Цвет фона заголовка группы */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.group-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222; /* Цвет фона записи */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.number {
+  font-size: 12px;
+  color: #888; /* Цвет текста номера */
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.highlight-button {
+  background-color: #7c4feb; /* Цвет фона кнопки выделения */
+  color: #fff; /* Цвет текста кнопки выделения */
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.highlight-button:hover {
+  background-color: #0053ba; /* Цвет фона кнопки выделения при наведении */
+}
+
+.delete-button {
+  background-color: #f00; /* Цвет фона кнопки удаления */
+  color: #fff; /* Цвет текста кнопки удаления */
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #cc0000; /* Цвет фона кнопки удаления при наведении */
+}
+
+#add-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7c4feb; /* Цвет фона кнопки добавления */
+  color: #fff; /* Цвет текста кнопки добавления */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#add-button:hover {
+  background-color: #7c4feb; /* Цвет фона кнопки добавления при наведении */
+}
+
+/* Модальные окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Цвет фона модального окна */
+}
+
+.modal-content {
+  background-color: #111; /* Цвет фона контента модального окна */
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #7c4feb; /* Цвет рамки модального окна */
+  width: 80%;
+  border-radius: 10px;
+  color: #7c4feb; /* Цвет текста в модальном окне */
+  position: relative;
+}
+
+.close-button {
+  color: #7c4feb; /* Цвет текста кнопки закрытия */
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #fff; /* Цвет текста кнопки закрытия при наведении */
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222; /* Цвет фона полей ввода */
+  color: #7c4feb; /* Цвет текста в полях ввода */
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #7c4feb; /* Цвет фона кнопки в форме */
+  color: #fff; /* Цвет текста кнопки в форме */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #7c4feb; /* Цвет фона кнопки в форме при наведении */
+}
+
+/* Стили для списка групп в модальном окне */
+#group-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#group-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222; /* Цвет фона элемента списка групп */
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.delete-group-button {
+  background-color: #f00; /* Цвет фона кнопки удаления группы */
+  color: #fff; /* Цвет текста кнопки удаления группы */
+  border: none;
+  padding: 3px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-group-button:hover {
+  background-color: #cc0000; /* Цвет фона кнопки удаления группы при наведении */
+}
+
+/* Выделение записи */
+.entry.highlighted {
+  background-color: #1fbe1641; /* Цвет фона выделенной записи */
+}
+
+
+.footer {
+  text-align: center;
+  margin-top: 10px; /* Уменьшите отступ сверху, чтобы поднять текст выше */
+  font-size: 14px; /* Размер шрифта */
+  position: relative; /* Убедитесь, что элемент может быть отодвинут */
+  top: -10px; /* Установка отрицательного отступа для поднятия текста выше */
+}
+
+.footer a {
+  color: #7c4feb; /* Цвет ссылки */
+  text-decoration: none; /* Убрать подчеркивание */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Подчеркнуть при наведении */
+}
+
